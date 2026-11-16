@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marca & Madeira — Mobiliário autoral em madeira maciça, couro natural e linho cru. Peças feitas sob encomenda no Brasil.">
+  <title>Marca & Madeira — Mobiliário Autoral</title>
+
+  <!-- Favicon SVG nativo (sem depender de arquivos externos) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231E1D1B'/%3E%3Cpath d='M8 23V9h3.2l4.8 7.6L20.8 9H24v14h-2.8V13.8l-5.2 8-5.2-8V23H8z' fill='%23F6F4EF'/%3E%3C/svg%3E">
+
+  <!-- Tipografia Editorial -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand" aria-label="Marca & Madeira — Início">
+        MARCA <span class="brand-amp">&amp;</span> MADEIRA
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navegacao-principal" aria-label="Abrir menu de navegação">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <nav id="navegacao-principal" class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#colecao">Coleção</a></li>
+          <li><a href="#oficio">O Ofício</a></li>
+          <li><a href="#materiais">Materiais</a></li>
+          <li><a href="#showroom" class="nav-cta">Agendar Visita</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+    <!-- Hero Assimétrico -->
+    <section class="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Edição Permanente • 2026</p>
+          <h1 id="titulo-hero">Formas silenciosas para habitar com tempo.</h1>
+          <p class="hero-lead">
+            Mobiliário desenhado e executado em marcenaria de precisão com freijó certificado, pedra-sabão e linho cru. Feito para atravessar gerações, não temporadas.
+          </p>
+          <div class="hero-actions">
+            <a href="#colecao" class="btn btn-primary">Explorar Peças</a>
+            <a href="#oficio" class="btn btn-outline">Conhecer o Ateliê</a>
+          </div>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1000&q=85"
+            alt="Poltrona estruturada em madeira freijó com almofadas em linho bege em sala iluminada por luz natural"
+            width="1000"
+            height="1200"
+            loading="eager"
+          >
+          <figcaption>Poltrona Cumaru — Estrutura em madeira maciça e estofamento em linho belga.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Catálogo com Filtro -->
+    <section id="colecao" class="section-collection" aria-labelledby="titulo-colecao">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Curadoria</p>
+            <h2 id="titulo-colecao">Peças em Destaque</h2>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filtrar móveis por categoria">
+            <button type="button" class="filter-btn active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-btn" data-filter="assentos" aria-pressed="false">Assentos</button>
+            <button type="button" class="filter-btn" data-filter="mesas" aria-pressed="false">Mesas</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="grid-produtos">
+          <article class="product-card" data-category="assentos">
+            <div class="product-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=800&q=80"
+                alt="Poltrona Lina com encosto curvo de madeira escura e assento em tecido claro"
+                width="800"
+                height="1000"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <h3>Poltrona Lina</h3>
+                <span class="product-price">R$ 4.890</span>
+              </div>
+              <p class="product-spec">Tauari maciço &bull; Linho cru</p>
+              <button type="button" class="btn-text" data-produto="Poltrona Lina">Solicitar ficha técnica &rarr;</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mesas">
+            <div class="product-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=800&q=80"
+                alt="Mesa de jantar retangular em madeira clara com pés robustos em ambiente minimalista"
+                width="800"
+                height="1000"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <h3>Mesa Monólito 220</h3>
+                <span class="product-price">R$ 8.400</span>
+              </div>
+              <p class="product-spec">Peroba-rosa &bull; 220 &times; 100 cm</p>
+              <button type="button" class="btn-text" data-produto="Mesa Monólito 220">Solicitar ficha técnica &rarr;</button>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="assentos">
+            <div class="product-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80"
+                alt="Sofá de três lugares em veludo verde musgo profundo com base de madeira natural"
+                width="800"
+                height="1000"
+                loading="lazy"
+              >
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <h3>Sofá Horizonte</h3>
+                <span class="product-price">R$ 11.200</span>
+              </div>
+              <p class="product-spec">Freijó &bull; Algodão tinturado</p>
+              <button type="button" class="btn-text" data-produto="Sofá Horizonte">Solicitar ficha técnica &rarr;</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Manifesto / O Ofício -->
+    <section id="oficio" class="section-craft" aria-labelledby="titulo-oficio">
+      <div class="container craft-grid">
+        <div class="craft-image">
+          <img
+            src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?auto=format&fit=crop&w=900&q=80"
+            alt="Detalhe de encaixe de marcenaria tradicional em madeira natural"
+            width="900"
+            height="700"
+            loading="lazy"
+          >
+        </div>
+        <div class="craft-content">
+          <p class="eyebrow">O Ofício</p>
+          <h2 id="titulo-oficio">A honestidade do encaixe aparente.</h2>
+          <p>
+            Recusamos laminados sintéticos e ferragens ocultas que comprometem a longevidade da peça. Cada junção é talhada com espigas e cavilhas de madeira maciça, permitindo que o móvel trabalhe naturalmente com a umidade do ambiente.
+          </p>
+          <dl class="craft-metrics">
+            <div>
+              <dt>100% Rastreável</dt>
+              <dd>Madeira de manejo sustentável com certificação DOF.</dd>
+            </div>
+            <div>
+              <dt>45 Dias Úteis</dt>
+              <dd>Produção artesanal sob encomenda em nosso galpão.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materiais -->
+    <section id="materiais" class="section-materials" aria-labelledby="titulo-materiais">
+      <div class="container">
+        <div class="section-header-narrow">
+          <p class="eyebrow">Matéria-Prima</p>
+          <h2 id="titulo-materiais">Superfícies que envelhecem com dignidade.</h2>
+        </div>
+
+        <div class="materials-list">
+          <div class="material-item">
+            <span class="material-index" aria-hidden="true">01</span>
+            <h3>Madeiras Nativas</h3>
+            <p>Freijó, cumaru e peroba-rosa secos em estufa controlada, finalizados apenas com óleo mineral e cera de abelha.</p>
+          </div>
+          <div class="material-item">
+            <span class="material-index" aria-hidden="true">02</span>
+            <h3>Fibras Naturais</h3>
+            <p>Linhos de trama aberta, lã virgem e couro atanado curtido sem metais pesados, mantendo o toque térmico agradável.</p>
+          </div>
+          <div class="material-item">
+            <span class="material-index" aria-hidden="true">03</span>
+            <h3>Pedra &amp; Latão</h3>
+            <p>Tampos em pedra-sabão escovada e detalhes estruturais em latão maciço sem verniz, que criam pátina natural ao toque.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showroom e Contato -->
+    <section id="showroom" class="section-contact" aria-labelledby="titulo-contato">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <p class="eyebrow">Showroom &amp; Projetos</p>
+          <h2 id="titulo-contato">Visite nosso espaço ou solicite amostras.</h2>
+          <p>
+            Atendemos clientes finais e escritórios de arquitetura com personalização de dimensões e envio de caixa de amostras físicas.
+          </p>
+          <address class="atelier-address">
+            <strong>Ateliê Vila Madalena</strong><br>
+            Rua Harmonia, 412 — São Paulo, SP<br>
+            Terça a Sábado, das 10h às 19h
+          </address>
+        </div>
+
+        <form class="contact-form" id="form-contato" novalidate>
+          <div class="form-field">
+            <label for="nome">Nome completo <span aria-hidden="true">*</span></label>
+            <input type="text" id="nome" name="nome" required autocomplete="name" placeholder="Ex: Helena Vasconcelos">
+            <span class="field-error" id="erro-nome" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="helena@exemplo.com.br">
+            <span class="field-error" id="erro-email" role="alert"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="assunto">Interesse</label>
+            <select id="assunto" name="assunto">
+              <option value="catalogo">Catálogo completo e tabela de valores</option>
+              <option value="amostras">Kit de amostras (Madeira e Tecidos)</option>
+              <option value="sob-medida">Projeto sob medida / Especificação</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="mensagem">Observações ou peça de interesse</label>
+            <textarea id="mensagem" name="mensagem" rows="3" placeholder="Informe medidas desejadas ou o nome da peça..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar Solicitação</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">MARCA &amp; MADEIRA</span>
+        <p class="footer-note">Mobiliário autoral brasileiro. Todos os direitos reservados.</p>
+      </div>
+      <a href="#topo" class="back-to-top">Voltar ao topo &uarr;</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
